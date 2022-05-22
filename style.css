@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    --primary-color-softBlue: hsl(215, 51%, 70%);
+    --primary-color-cyan: hsl(178, 100%, 50%);
+    --neutral-color-mainBgDarkBlue: hsl(217, 54%, 11%);
+    --neutral-color-cardDarkBlue: hsl(216, 50%, 16%);
+    --neutral-color-lineDarkBlue: hsl(215, 32%, 27%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+.padding2rem {
+    padding: 2rem;
+}
+.container {
+    max-width: 1440px;
+    height: 100vh;  
+    margin: 0 auto;
+    background-color: var(--neutral-color-mainBgDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.nftBox {
+    max-width: 300px;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--neutral-color-cardDarkBlue);
+}
+.nftImage  {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.nftTitle h1 {
+    margin-top: 1rem;
+    color: var(--neutral-color-white);
+    font-size: 1.4rem;
+}
+.nftDescription p {
+    margin-top: 1rem;
+    color: var(--primary-color-softBlue);
+    font-size: 1rem;
+}
+.nftMarketInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.nftMarketInfo h2 {
+    color: var(--primary-color-cyan);
+}
+.nftMarketInfo h3 {
+    color: var(--primary-color-softBlue);
+}
+.line {
+    border: 1px solid var(--neutral-color-lineDarkBlue);
+    margin: 1rem 0;
+}
+.ownerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ownerImage {
+    max-width: 2rem;
+    border: 2px solid var(--neutral-color-white);
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+.ownerTitle p {
+    color: var(--primary-color-softBlue);
+}
+.ownerName {
+    color: var(--neutral-color-white);
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color-softBlue);
+    color: var(--neutral-color-mainBgDarkBlue);
+     font-size: 0.7rem; 
+     text-align: center; 
+    }
+.attribution a {
+    font-size: 0.8rem;
+     color: var(--neutral-color-mainBgDarkBlue)
+    }
