@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css" type="text/css">
+  
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
   <main class="container">
     <div class="nftBox">
-      <figure> <img class="nftImage" src="./images/image-equilibrium.jpg" alt="">
-        <figcaption class="nftTitle">
-          <h1>Equilibrium #3429</h1>
-        </figcaption>
-      </figure>
+      <div class="nftImageContainer"> 
+        <img  class="nftImage" src="./images/image-equilibrium.jpg" alt="NFT Photo">
+        <img  class="hoverIcon" src="./images/icon-view.svg" alt="">
+          
+      </div>
+      <div class="nftTitle">
+        <h1>Equilibrium #3429</h1>
+      </div>
       <div class="nftDescription">
         <p>Our Equilibrium collection promotes balance and calm.</p>
       </div>
@@ -24,7 +27,7 @@
           <h2><span class="currencyIcon"><img src="./images/icon-ethereum.svg" alt="Currency icon"></span> 0.041 ETH</h2>
         </div>
         <div class="nftDuration">
-          <h3>3 days left</h3>
+          <h3><span class="duartionIcon"><img src="./images/icon-clock.svg" alt=""></span> 3 days left</h3>
         </div>
       </div>
       <div class="line"></div>
@@ -42,4 +45,5 @@
     </footer>
   </main>
 </body>
+
 </html>

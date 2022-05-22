@@ -23,27 +23,53 @@
     background-color: var(--neutral-color-mainBgDarkBlue);
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
+    /* align-content: center; */
+    /* align-items: center; */
     justify-content: center;
 }
 .nftBox {
     max-width: 300px;
-    max-height: 700px;
     margin: 0 auto;
     padding: 1rem 1.3rem;
     border-radius: 1rem;
     background-color: var(--neutral-color-cardDarkBlue);
+   
+}
+.nftImageContainer {
+    position: relative;
+    width: 100%;
+    max-height: 20rem;
+    overflow: hidden;
+    border-radius: 0.6rem;
+}
+.hoverIcon {
+    display: none;
+    position: absolute;
+    right: 1px;
+    padding: 7rem 7rem;
+    background-color: hsla(178, 100%, 50%, 0.6);
 }
 .nftImage  {
     width: 100%;
     margin: 0 auto;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+}
+.nftImage:hover~.hoverIcon{
+    display: inline;
+    cursor: pointer;
+}
+.hoverIcon:hover {
+    cursor: pointer;
+    display: inline;
 }
 .nftTitle h1 {
     margin-top: 1rem;
     color: var(--neutral-color-white);
     font-size: 1.4rem;
+}
+.nftTitle h1:hover {
+    color: var(--primary-color-cyan);
+    cursor: pointer;
 }
 .nftDescription p {
     margin-top: 1rem;
@@ -58,8 +84,10 @@
 .nftMarketInfo h2 {
     color: var(--primary-color-cyan);
 }
-.nftMarketInfo h3 {
+.nftDuration h3,
+.durationIcon img  {
     color: var(--primary-color-softBlue);
+    font-weight: 300;
 }
 .line {
     border: 1px solid var(--neutral-color-lineDarkBlue);
@@ -83,15 +111,16 @@
 .ownerName {
     color: var(--neutral-color-white);
 }
+.ownerName:hover {
+    color: var(--primary-color-cyan);
+    cursor: pointer;
+}
 .attribution {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: var(--primary-color-softBlue);
     color: var(--neutral-color-mainBgDarkBlue);
      font-size: 0.7rem; 
      text-align: center; 
+     margin-top: 1rem;
     }
 .attribution a {
     font-size: 0.8rem;
