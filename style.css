@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 :root {
     --primary-color-softBlue: hsl(215, 51%, 70%);
     --primary-color-cyan: hsl(178, 100%, 50%);
@@ -7,18 +8,21 @@
     --neutral-color-lineDarkBlue: hsl(215, 32%, 27%);
     --neutral-color-white: hsl(0, 0%, 100%);
 }
+
 * {
     margin: 0;
     padding: 0;
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
 }
+
 .padding2rem {
     padding: 2rem;
 }
+
 .container {
     max-width: 1440px;
-    height: 100vh;  
+    height: 100vh;
     margin: 0 auto;
     background-color: var(--neutral-color-mainBgDarkBlue);
     display: flex;
@@ -27,14 +31,16 @@
     /* align-items: center; */
     justify-content: center;
 }
+
 .nftBox {
     max-width: 300px;
     margin: 0 auto;
     padding: 1rem 1.3rem;
     border-radius: 1rem;
     background-color: var(--neutral-color-cardDarkBlue);
-   
+
 }
+
 .nftImageContainer {
     position: relative;
     width: 100%;
@@ -42,6 +48,7 @@
     overflow: hidden;
     border-radius: 0.6rem;
 }
+
 .hoverIcon {
     display: none;
     position: absolute;
@@ -49,80 +56,97 @@
     padding: 7rem 7rem;
     background-color: hsla(178, 100%, 50%, 0.6);
 }
-.nftImage  {
+
+.nftImage {
     width: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;
 }
-.nftImage:hover~.hoverIcon{
+
+.nftImage:hover~.hoverIcon {
     display: inline;
     cursor: pointer;
 }
+
 .hoverIcon:hover {
     cursor: pointer;
     display: inline;
 }
+
 .nftTitle h1 {
     margin-top: 1rem;
     color: var(--neutral-color-white);
     font-size: 1.4rem;
 }
+
 .nftTitle h1:hover {
     color: var(--primary-color-cyan);
     cursor: pointer;
 }
+
 .nftDescription p {
     margin-top: 1rem;
     color: var(--primary-color-softBlue);
     font-size: 1rem;
 }
+
 .nftMarketInfo {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
+
 .nftMarketInfo h2 {
     color: var(--primary-color-cyan);
 }
+
 .nftDuration h3,
-.durationIcon img  {
+.durationIcon img {
     color: var(--primary-color-softBlue);
     font-weight: 300;
 }
+
 .line {
     border: 1px solid var(--neutral-color-lineDarkBlue);
     margin: 1rem 0;
 }
+
 .ownerContainer {
     display: flex;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
 }
+
 .ownerImage {
     max-width: 2rem;
     border: 2px solid var(--neutral-color-white);
     border-radius: 100%;
     margin-right: 1rem;
 }
+
 .ownerTitle p {
     color: var(--primary-color-softBlue);
 }
+
 .ownerName {
     color: var(--neutral-color-white);
 }
+
 .ownerName:hover {
     color: var(--primary-color-cyan);
     cursor: pointer;
 }
+
 .attribution {
     background-color: var(--primary-color-softBlue);
     color: var(--neutral-color-mainBgDarkBlue);
-     font-size: 0.7rem; 
-     text-align: center; 
-     margin-top: 1rem;
-    }
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .attribution a {
     font-size: 0.8rem;
-     color: var(--neutral-color-mainBgDarkBlue)
-    }
+    color: var(--neutral-color-mainBgDarkBlue);
+}
